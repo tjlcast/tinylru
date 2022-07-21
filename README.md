@@ -45,10 +45,6 @@ function.
 prev, ok, evictedKey, evictedValue, evicted := cache.SetEvicted("hello", "jello")
 ```
 
-### Contact
-
-Josh Baker [@tidwall](https://twitter.com/tidwall)
-
 ### License
 
 `tinylru` source code is available under the MIT License.
