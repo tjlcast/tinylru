@@ -48,6 +48,7 @@ prev, ok, evictedKey, evictedValue, evicted := cache.SetEvicted("hello", "jello"
 A `Range` function could range all items in the cache.
 function.
 ```go
+var rseg *segment
 cache.Range(func(_, v interface{}) bool {
 		s := v.(*segment)
 		if index >= s.index && index < s.index+uint64(len(s.epos)) {
