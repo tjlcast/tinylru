@@ -11,7 +11,7 @@ A fast little LRU cache.
 To start using `tinylru`, install Go and run go get:
 
 ```
-$ go get -u github.com/tidwall/tinylru
+$ go get -u github.com/tjlcast/tinylru
 ```
 
 This will retrieve the library.
