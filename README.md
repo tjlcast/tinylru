@@ -45,6 +45,18 @@ function.
 prev, ok, evictedKey, evictedValue, evicted := cache.SetEvicted("hello", "jello")
 ```
 
+A `Range` function could range all items in the cache.
+function.
+```go
+cache.Range(func(_, v interface{}) bool {
+		s := v.(*segment)
+		if index >= s.index && index < s.index+uint64(len(s.epos)) {
+			rseg = s
+		}
+		return false
+	})
+```
+
 ### License
 
 `tinylru` source code is available under the MIT License.
