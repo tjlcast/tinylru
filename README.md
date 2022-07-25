@@ -1,7 +1,5 @@
 # `tinylru`
 
-[![GoDoc](https://godoc.org/github.com/tidwall/tinylru?status.svg)](https://godoc.org/github.com/tidwall/tinylru)
-
 A fast little LRU cache. 
 
 ## Getting Started
@@ -46,7 +44,6 @@ prev, ok, evictedKey, evictedValue, evicted := cache.SetEvicted("hello", "jello"
 ```
 
 A `Range` function could range all items in the cache. If return true, then it will stop the iterator.
-function.
 ```go
 var rseg *segment
 cache.Range(func(_, v interface{}) bool {
