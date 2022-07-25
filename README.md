@@ -45,7 +45,7 @@ function.
 prev, ok, evictedKey, evictedValue, evicted := cache.SetEvicted("hello", "jello")
 ```
 
-A `Range` function could range all items in the cache.
+A `Range` function could range all items in the cache. If return true, then it will stop the iterator.
 function.
 ```go
 var rseg *segment
@@ -58,6 +58,3 @@ cache.Range(func(_, v interface{}) bool {
 	})
 ```
 
-### License
-
-`tinylru` source code is available under the MIT License.
